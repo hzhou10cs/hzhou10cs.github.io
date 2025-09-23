@@ -1,11 +1,11 @@
-primary_name: "Your Name"
+primary_name: "Hansong Zhou"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "Hansong Zhou"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/FSU_LOGO1.png  # Logo is optional
+  name: 4th year Ph.D. Candidate
+- name: Department of Computer Science, Florida State University
 
 
 email: "your@email.com"
@@ -22,40 +22,50 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Hansong Zhou is a 5-th year Ph.D. in the <a href="https://www.cs.fsu.edu/">Department of Computer Science</a> at the <a href="https://www.fsu.edu/">Florida State University</a>. He is under the supervision of Prof.  <a href="https://www.cs.fsu.edu/~xzhang/"><b>Xiaonan Zhang</b></a>. 
+    He obtained his master degress in 2021 from the Department of Electrical & Computer Engineering at the <a href="https://www.ece.ufl.edu/">University of Florida</a>, and his bachelor degree in 2019 from the Department of Electrical and Information Engineering at <a href="https://eie.xjtu.edu.cn/">Xi'an Jiaotong University</a>.
+    His work contributed to the research for the efficient and reliable <b> Edge intelligence</b>, particularly in the areas of Federated Learning (FL)-based application development and Large Language Models (LLM) inference acceleration.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    Hansong's Research focuses on <u><b>AI-driven multi-access computing networks</b></u> and <u><b>practical edge collaboration</b></u>. Currently, I am working on the development of efficient collaborative inference of LLMs in heterogeneous multi-edge systems.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_url: /assets/images/photos/portrait.png
+#portrait_caption: >-
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: Florida State University
+  logo: /assets/images/badges/FSU_LOGO2.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
+    Department of Computer Science<br/>
+    Ph.D. Candidate
+  date: Aug. 2021 - present
+- name: University of Florida
+  logo: /assets/images/badges/UF_LOGO.png
+  position: >-
+    Department of Electrical & Computer Engineering<br/>
+    M.S. in Computer Engineering
   date: Sep. 2019 - Jul. 2021
+- name: Xi'an Jiaotong University
+  logo: /assets/images/badges/XJTU_LOGO.png
+  position: >-
+    Department of Electrical and Information Engineering<br/>
+    B.S. in Information Engineering
+  date: Sep. 2015 - Jul. 2019
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: University of Electronic Science and Technology of China
+  logo: /assets/images/badges/UESTC_LOGO.png
+  position: >-
+    School of Information and Communication Engineering<br/>
+    Research Intern
+  date: July. 2018 - Dec. 2018 
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Dean's Award for Doctoral Excellence (DADE), Florida State University
+  date: 2023 - 2025
+
+twitter: home
+email: hz21e@fsu.edu
+gscholar: D9Z_WaIAAAAJ&hl=en
+github: hzhou10cs

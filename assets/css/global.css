@@ -90,3 +90,11 @@ div.lazy {
     font-family: Courier, monospace;
 }
 
+.pub-abstract-wrap:has(details[open]) .abs-preview { display: none; }
+
+/* details.pub-abs summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
+details.pub-abs summary::-webkit-details-marker { display: none; } */

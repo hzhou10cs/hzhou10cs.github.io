@@ -1,0 +1,159 @@
+---
+layout: default
+title: Services
+permalink: /services/
+---
+
+<div class="container my-4">
+  <h1 class="mb-4">Services</h1>
+
+  {% assign svc = site.data.services %}
+
+  {%- comment -%} ========== 1) REVIEW ========== {%- endcomment -%}
+  {% if svc.review %}
+    {% if svc.review.conferences or svc.review.journals %}
+      <div class="my-3 bg-white shadow-sm rounded-xl">
+        <h6 class="p-3 mb-0 border-bottom border-gray">
+          <i class="fas fa-check-circle"></i> Review
+        </h6>
+
+        <div class="px-3 pb-1">
+          {% if svc.review.conferences %}
+            {% assign not_first = false %}
+            <div class="media py-1">
+              <div class="mr-3 text-muted my-1">Conferences</div>
+              <div class="media-body">
+                {% assign confs = svc.review.conferences %}
+                {% for item in confs %}
+                  {% assign yrs = item.years | default: item.year %}
+                  {% if yrs %}
+                    {% assign yrs_sorted = yrs | sort %}
+                    {% assign yrs_str = yrs_sorted | join: ', ' %}
+                  {% endif %}
+                  <div class="my-1 d-flex">
+                    <div><strong>{{ item.name }}</strong></div>
+                    <div class="ml-auto mt-auto text-muted no-break">
+                      {% if yrs_str %}<i>{{ yrs_str }}</i>{% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if svc.review.journals %}
+            <div class="media py-1 border-top border-gray">
+              <div class="mr-3 text-muted my-1">Journals</div>
+              <div class="media-body">
+                {% assign not_first = false %}
+                {% assign jrnls = svc.review.journals %}
+                {% for item in jrnls %}
+                  {% assign yrs = item.years | default: item.year %}
+                  {% if yrs %}
+                    {% assign yrs_sorted = yrs | sort %}
+                    {% assign yrs_str = yrs_sorted | join: ', ' %}
+                  {% endif %}
+                  <div class="my-1 d-flex">
+                    <div><strong>{{ item.name }}</strong></div>
+                    <div class="ml-auto mt-auto text-muted no-break">
+                      {% if yrs_str %}<i>{{ yrs_str }}</i>{% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+
+
+  {%- comment -%} ========== 2) TEACHING ========== {%- endcomment -%}
+  {% if svc.teaching %}
+    {% if svc.teaching.ta or svc.teaching.research_tutor %}
+      <div class="my-3 bg-white shadow-sm rounded-xl">
+        <h6 class="p-3 mb-0 border-bottom border-gray">
+          <i class="fas fa-chalkboard-teacher"></i> Teaching
+        </h6>
+
+        <div class="px-3 pb-1">
+          {% if svc.teaching.ta %}
+            <div class="media py-1">
+              <div class="mr-3 text-muted my-1">TA</div>
+              <div class="media-body">
+                {% assign not_first = false %}
+                {% for item in svc.teaching.ta %}
+                  <div class="my-1 d-flex">
+                    {% assign not_first = true %}
+                    <div>
+                      <strong>{{ item.course }}</strong>
+                      {% if item.place %}<span class="text-muted"> — {{ item.place }}</span>{% endif %}
+                    </div>
+                    <div class="ml-auto mt-auto text-muted no-break">
+                      {% if item.duration %}<i>{{ item.duration }}</i>{% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if svc.teaching.research_tutor %}
+            <div class="media py-1 border-top border-gray">
+              <div class="mr-3 text-muted my-1">Research Tutor</div>
+              <div class="media-body">
+                {% assign not_first = false %}
+                {% for item in svc.teaching.research_tutor %}
+                  <div class="my-1 d-flex">
+                    {% assign not_first = true %}
+                    <div>
+                      <strong>{{ item.project }}</strong>
+                      {% if item.place %}<span class="text-muted"> — {{ item.place }}</span>{% endif %}
+                      {% if item.student %}<span class="text-muted"> — {{ item.student }}</span>{% endif %}
+                    </div>
+                    <div class="ml-auto mt-auto text-muted no-break">
+                      {% if item.duration %}<i>{{ item.duration }}</i>{% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+
+
+  {%- comment -%} ========== 3) INVITED PRESENTATION ========== {%- endcomment -%}
+  {% if svc.invited_presentations %}
+    <div class="my-3 bg-white shadow-sm rounded-xl">
+      <h6 class="p-3 mb-0 border-bottom border-gray">
+        <i class="fas fa-microphone-alt"></i> Invited Presentation
+      </h6>
+
+      <div class="px-3 pb-1">
+        <div class="media py-1">
+          <div class="mr-3 text-muted my-1">Talks</div>
+          <div class="media-body">
+            {% assign not_first = false %}
+            {% assign talks = svc.invited_presentations | sort: "year" | reverse %}
+            {% for item in talks %}
+              <div class="my-1 d-flex">
+                {% assign not_first = true %}
+                <div>
+                  <strong>{{ item.name }}</strong>
+                  {% if item.place %}<span class="text-muted"> — {{ item.place }}</span>{% endif %}
+                </div>
+                <div class="ml-auto mt-auto text-muted no-break">
+                  {% if item.year %}<i>{{ item.year }}</i>{% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>
