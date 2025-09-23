@@ -17,9 +17,9 @@ teaching:
     - { course: "COP 4521: Secure, Parallel, Distributed programming ", place: "FSU", duration: "Fall 2023" }
     - { course: "CEN 4090: Software Engineering Capstone ", place: "FSU", duration: "Fall 2023" }
   research_tutor:
-    - { project: "Undergraduate Student Research Internship",  duration: "Fall 2024 - present", student: "Carson Rivera" }
-    - { project: "Young Scholars Program for high school students",  duration: "Summer 2023", student: "Rohil Agarwal, Mathew Cai" }
-    - { project: "Undergraduate Student Research Internship",  duration: "Fall 2022 - Spring 2023", student: "Gabriel Mourad, Daniel Gandelman" }
+    - { role: "Undergraduate Student Research Internship",  duration: "Fall 2024 - present", student: "Carson Rivera", project: Medical chatbox for weight losing and Speculative decoding for efficient collaborative LLM}
+    - { role: "Young Scholars Program for high school students",  duration: "Summer 2023", student: "Rohil Agarwal, Mathew Cai", project: Personalized federated learning for high school quality rating }
+    - { role: "Undergraduate Student Research Internship",  duration: "Fall 2022 - Spring 2023", student: "Gabriel Mourad, Daniel Gandelman", project: Federated learning with local differential privacy and Fair resource allocation }
 
 invited_presentations:
   - { name: "Student seminar at FSU Compute Science", place: "FSU", year: 2024.11 }

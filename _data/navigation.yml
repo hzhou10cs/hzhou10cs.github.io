@@ -9,5 +9,5 @@ pages:
   url: /services
 # - name: Research
 #   url: /research
-# - name: Showcase
-#   url: /showcase
+- name: Personal
+  url: /showcase
