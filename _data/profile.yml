@@ -23,10 +23,10 @@ short_bio: >-
   <p>
     Hansong Zhou is a 5-th year Ph.D. in the <a href="https://www.cs.fsu.edu/">Department of Computer Science</a> at the <a href="https://www.fsu.edu/">Florida State University</a>. He is under the supervision of Prof.  <a href="https://www.cs.fsu.edu/~xzhang/"><b>Xiaonan Zhang</b></a>. 
     He obtained his master degress in 2021 from the Department of Electrical & Computer Engineering at the <a href="https://www.ece.ufl.edu/">University of Florida</a>, and his bachelor degree in 2019 from the Department of Electrical and Information Engineering at <a href="https://eie.xjtu.edu.cn/">Xi'an Jiaotong University</a>.
-    His work contributed to the research for the efficient and reliable <b> Edge intelligence</b>, particularly in the areas of Federated Learning (FL)-based application development and Large Language Models (LLM) inference acceleration.
+    His work contributed to the research for the efficient and reliable <b> Edge Intelligence</b>, particularly for rapid development in large-scale scenarios and Large Language Models (LLM) inference acceleration.
   </p>
   <p>
-    Hansong's Research focuses on <u><b>AI-driven multi-access computing networks</b></u> and <u><b>practical edge collaboration</b></u>. Currently, I am working on the development of efficient collaborative inference of LLMs in heterogeneous multi-edge systems.
+    Hansong's Research focuses on <u><b>distributed LLM training/inference on edges</b></u>, <u><b>LLM fine-tuning for domain-specific expert agents</b></u> and <u><b>large-scale collaborative edge systems</b></u>. Currently, He is owning the end-to-end delivery of a LLM-based AI Health Coach for rural health, spanning data pipeline design, model fine-tuning, prompt engineering, and final application deployment.
   </p>
 
 portrait_url: /assets/images/photos/portrait.png
